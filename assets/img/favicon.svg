@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Squircle App Background -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bgGrad)" filter="url(#softGlow)"/>
+
+  <!-- Calendar Base Card -->
+  <rect x="10" y="12" width="44" height="42" rx="7" fill="#ffffff" opacity="0.18"/>
+  <!-- Calendar Header Bar -->
+  <path d="M 10 19 Q 10 12 17 12 L 47 12 Q 54 12 54 19 L 54 22 L 10 22 Z" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Binder Rings -->
+  <rect x="18" y="9" width="4" height="6" rx="2" fill="#ffffff"/>
+  <rect x="42" y="9" width="4" height="6" rx="2" fill="#ffffff"/>
+
+  <!-- Time Table Study Blocks -->
+  <!-- Session 1: Completed with Checkmark -->
+  <rect x="14" y="26" width="16" height="11" rx="3.5" fill="#10b981"/>
+  <path d="M 18 31.5 L 21 34.5 L 26.5 28.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Session 2: Course Tag -->
+  <rect x="34" y="26" width="16" height="11" rx="3.5" fill="#ffffff" opacity="0.9"/>
+  <rect x="37" y="30" width="10" height="2" rx="1" fill="#4f46e5" opacity="0.8"/>
+  <rect x="37" y="33" width="7" height="1.8" rx="0.9" fill="#6366f1" opacity="0.5"/>
+
+  <!-- Session 3: Cyan Tag -->
+  <rect x="14" y="40" width="16" height="10" rx="3.5" fill="#38bdf8"/>
+  <rect x="17" y="44" width="10" height="2" rx="1" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Session 4: Amber Tag -->
+  <rect x="34" y="40" width="16" height="10" rx="3.5" fill="#f59e0b"/>
+  <rect x="37" y="44" width="10" height="2" rx="1" fill="#ffffff" opacity="0.9"/>
+
+  <!-- StudySync ✦ Academic Sparkle in Top Corner -->
+  <path d="M 50 6 Q 50 11 55 11 Q 50 11 50 16 Q 50 11 45 11 Q 50 11 50 6 Z" fill="url(#sparkleGrad)"/>
+</svg>

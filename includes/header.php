@@ -19,7 +19,10 @@ $u         = current_user();
   <meta property="og:description" content="<?= e($pageDesc) ?>">
   <meta name="csrf-token" content="<?= e(csrf_token()) ?>">
   <meta name="base-url" content="<?= e(BASE_URL) ?>">
-  <link rel="icon" href="<?= e(url('assets/img/favicon.ico')) ?>">
+  <link rel="icon" type="image/svg+xml" href="<?= e(url('assets/img/favicon.svg')) ?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= e(url('assets/img/favicon-32x32.png')) ?>">
+  <link rel="icon" type="image/x-icon" href="<?= e(url('assets/img/favicon.ico')) ?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= e(url('assets/img/apple-touch-icon.png')) ?>">
   
   <!-- Immediate theme application to prevent flash -->
   <script>
